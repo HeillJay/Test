@@ -1,0 +1,29 @@
+
+// cek data
+GET http://localhost:5000/users
+
+### // cari data
+GET http://localhost:5000/users/65e595f93a8e0f0a20ce62f2
+
+### // kirim data
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Della",
+    "email" : "Della@gmail.com",
+    "gender" : "Female"
+}
+
+### // edit data
+PATCH  http://localhost:5000/users/65e595f93a8e0f0a20ce62f2
+Content-Type: application/json
+
+{
+    "name" : "sandi",
+    "email" : "sandi@gmail.com",
+    "gender" : "male"
+}
+
+### // delete data
+DELETE  http://localhost:5000/users/65e595f93a8e0f0a20ce62f2
